@@ -79,11 +79,11 @@
 
 ## 正确的打开方式
 1. 安装两个字体文件
-2. 打开release文件夹中的HotelManageSystem.exe运行程序
+2. 使用QT Creator打开pro文件
+3. 选择MinGW构建项目
 
 ## 补充说明
 * 提供SQLite Developer Lite、StarUML的安装包
-* 提供release版本以及源码
 * 平台管理员账号唯一 用户名 cinyou 密码123
 * 顾客在同一家酒店只能同时存在一个未完成的订单
 * icon文件夹里部分图片不需要用到 懒得删掉了
