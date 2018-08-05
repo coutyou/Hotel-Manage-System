@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HotelSearch</class>
+ <widget class="QDialog" name="HotelSearch">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>555</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>酒店搜索</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/myimages/icon/酒店.png</normaloff>:/myimages/icon/酒店.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>按酒店名搜索</string>
+      </attribute>
+      <widget class="QPushButton" name="hotelnameButton">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>210</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="hotelNameInput">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>120</y>
+         <width>142</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+       </property>
+       <property name="placeholderText">
+        <string>请输入酒店名</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="hotelName">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>酒店名： </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="returnButton_2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>210</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>按酒店地址搜索</string>
+      </attribute>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>160</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>排序方法：</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="listMethodBox">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>160</y>
+         <width>141</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>按评分由高到低</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按评分由低到高</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="districtInput">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>80</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+       </property>
+       <property name="placeholderText">
+        <string>请输入地区名</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="hotelAddressButton">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>240</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="hotelAddress">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>80</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>酒店地址： </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="returnButton">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>240</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cityInput">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>80</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+       </property>
+       <property name="placeholderText">
+        <string>请输入城市名</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>hotelNameInput</tabstop>
+  <tabstop>cityInput</tabstop>
+  <tabstop>districtInput</tabstop>
+  <tabstop>listMethodBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>returnButton</sender>
+   <signal>clicked()</signal>
+   <receiver>HotelSearch</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>525</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>returnButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>HotelSearch</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

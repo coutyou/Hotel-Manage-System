@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowForHotelLogin</class>
+ <widget class="QMainWindow" name="MainWindowForHotelLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1074</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1074</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1074</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>I'm a Hotel Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/myimages/icon2/经理人.png</normaloff>:/myimages/icon2/经理人.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>871</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icon.qrc">:/myimages/icon/back6.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1074</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;张海山锐谐体&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>账号（&amp;M）</string>
+    </property>
+    <addaction name="action_P"/>
+    <addaction name="action_C"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_A"/>
+    <addaction name="action_D"/>
+    <addaction name="separator"/>
+    <addaction name="action_F"/>
+    <addaction name="action_Q"/>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>订单（&amp;O）</string>
+    </property>
+    <addaction name="action_E"/>
+    <addaction name="action_U"/>
+   </widget>
+   <widget class="QMenu" name="menu_P">
+    <property name="title">
+     <string>帮助（&amp;P）</string>
+    </property>
+    <addaction name="action_V"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_O"/>
+   <addaction name="menu_P"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;张海山锐谐体&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_P"/>
+   <addaction name="action_C"/>
+   <addaction name="separator"/>
+   <addaction name="action_A"/>
+   <addaction name="action_D"/>
+   <addaction name="separator"/>
+   <addaction name="action_E"/>
+   <addaction name="action_U"/>
+   <addaction name="separator"/>
+   <addaction name="action_F"/>
+   <addaction name="action_Q"/>
+   <addaction name="separator"/>
+   <addaction name="action_V"/>
+  </widget>
+  <action name="action_P">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon2/个人头像.png</normaloff>:/myimages/icon2/个人头像.png</iconset>
+   </property>
+   <property name="text">
+    <string>查看个人信息（&amp;P）</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon/编辑.png</normaloff>:/myimages/icon/编辑.png</iconset>
+   </property>
+   <property name="text">
+    <string>修改个人信息（&amp;C）...</string>
+   </property>
+  </action>
+  <action name="action_F">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon2/登出.png</normaloff>:/myimages/icon2/登出.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出账号（&amp;F）</string>
+   </property>
+  </action>
+  <action name="action_Q">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon/退出.png</normaloff>:/myimages/icon/退出.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出程序（&amp;Q）</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon/酒店.png</normaloff>:/myimages/icon/酒店.png</iconset>
+   </property>
+   <property name="text">
+    <string>查看酒店信息（&amp;A）</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon/修改.png</normaloff>:/myimages/icon/修改.png</iconset>
+   </property>
+   <property name="text">
+    <string>修改酒店信息（&amp;D）...</string>
+   </property>
+  </action>
+  <action name="action_E">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon/列表.png</normaloff>:/myimages/icon/列表.png</iconset>
+   </property>
+   <property name="text">
+    <string>查看所有订单（&amp;E）</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon/更新.png</normaloff>:/myimages/icon/更新.png</iconset>
+   </property>
+   <property name="text">
+    <string>更新订单状态（&amp;U）...</string>
+   </property>
+  </action>
+  <action name="action_V">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/myimages/icon2/mobiletesting移动测试.png</normaloff>:/myimages/icon2/mobiletesting移动测试.png</iconset>
+   </property>
+   <property name="text">
+    <string>版本信息（&amp;V）</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

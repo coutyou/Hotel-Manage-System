@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RoomSearch</class>
+ <widget class="QDialog" name="RoomSearch">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>454</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>客房搜索</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/myimages/icon/客房.png</normaloff>:/myimages/icon/客房.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>请选择房型： </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>请选择排序方式： </string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="roomTypeBox">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>所有房型</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>单人间</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>双人间</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>三人间</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>大床间</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>套间</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="listMethodBox">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>150</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>按价格由高到低</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按价格由低到高</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按折扣由高到低</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按折扣由低到高</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按剩余房间数由高到低</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按剩余房间数由低到高</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="searchButton">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnButton">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>230</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>returnButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RoomSearch</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

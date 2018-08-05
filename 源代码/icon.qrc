@@ -1,0 +1,91 @@
+<RCC>
+    <qresource prefix="/myimages">
+        <file>icon/icon-money.png</file>
+        <file>icon/icon-bang.png</file>
+        <file>icon/icon-earth.png</file>
+        <file>icon/icon-id card.png</file>
+        <file>icon/icon-info.png</file>
+        <file>icon/icon-litst.png</file>
+        <file>icon/icon-pen.png</file>
+        <file>icon/icon-right.png</file>
+        <file>icon/icon-Search.png</file>
+        <file>icon/icon-tel.png</file>
+        <file>icon/icon-weixin.png</file>
+        <file>icon/icon-wrong.png</file>
+        <file>icon/icon-mqs.png</file>
+        <file>icon/icon-shopping-cart.png</file>
+        <file>icon/icon-up.png</file>
+        <file>icon2/Android更多.png</file>
+        <file>icon2/dbs 数据库备份.png</file>
+        <file>icon2/dms数据库管理.png</file>
+        <file>icon2/dysms 短信服务.png</file>
+        <file>icon2/HybridDB for MySQL.png</file>
+        <file>icon2/mas移动数据分析.png</file>
+        <file>icon2/mobiletesting移动测试.png</file>
+        <file>icon2/ots表格存储.png</file>
+        <file>icon2/笔记本电脑.png</file>
+        <file>icon2/编辑表格.png</file>
+        <file>icon2/菜单.png</file>
+        <file>icon2/仓库.png</file>
+        <file>icon2/尺子.png</file>
+        <file>icon2/登出.png</file>
+        <file>icon2/地点定位.png</file>
+        <file>icon2/对号.png</file>
+        <file>icon2/二维码.png</file>
+        <file>icon2/个人头像.png</file>
+        <file>icon2/个人信息.png</file>
+        <file>icon2/购物袋.png</file>
+        <file>icon2/关闭.png</file>
+        <file>icon2/经理人.png</file>
+        <file>icon2/链接.png</file>
+        <file>icon2/列表.png</file>
+        <file>icon2/签到.png</file>
+        <file>icon2/人民币.png</file>
+        <file>icon2/提示.png</file>
+        <file>icon2/喜爱.png</file>
+        <file>icon2/赞.png</file>
+        <file>icon2/账单.png</file>
+        <file>icon2/账单_空.png</file>
+        <file>icon2/账单_取消.png</file>
+        <file>icon2/账单_详情.png</file>
+        <file>icon2/账单_新增.png</file>
+        <file>icon2/账单-完成.png</file>
+        <file>icon2/纸币_人民币.png</file>
+        <file>icon/编辑.png</file>
+        <file>icon/酒店.png</file>
+        <file>icon/客房.png</file>
+        <file>icon/筛选.png</file>
+        <file>icon/更新.png</file>
+        <file>icon/更新2.png</file>
+        <file>icon/退出 (5).png</file>
+        <file>icon/退出.png</file>
+        <file>icon/审核2.png</file>
+        <file>icon/审核管理.png</file>
+        <file>icon/列表.png</file>
+        <file>icon/列表2.png</file>
+        <file>icon/审核.png</file>
+        <file>icon/审核3.png</file>
+        <file>icon/登陆.png</file>
+        <file>icon/注册.png</file>
+        <file>icon/注册邀请.png</file>
+        <file>icon/注册页_入驻成功 #d8432a &amp; 66px.png</file>
+        <file>icon/管理员配置.png</file>
+        <file>icon/修改.png</file>
+        <file>icon/warning-circle.png</file>
+        <file>icon/info-circle.png</file>
+        <file>icon/question-circle.png</file>
+        <file>icon/hotel7.jpg</file>
+        <file>icon/hotel3.jpg</file>
+        <file>icon/密码.png</file>
+        <file>icon/账号.png</file>
+        <file>icon/hotel8.png</file>
+        <file>icon/back4.jpg</file>
+        <file>icon/back2.jpg</file>
+        <file>icon/back1.jpg</file>
+        <file>icon/back8.jpg</file>
+        <file>icon/back7.jpg</file>
+        <file>icon/back6.jpg</file>
+        <file>icon/back5.jpg</file>
+        <file>icon/icon-fee.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HotelInfoChange</class>
+ <widget class="QDialog" name="HotelInfoChange">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>937</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>更改酒店信息</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/myimages/icon/修改.png</normaloff>:/myimages/icon/修改.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>240</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>张海山锐谐体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>描述</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="districtInput">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>120</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入地区名</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="hotelPhonenumInput">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>170</y>
+     <width>142</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入酒店电话</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hotelAddress">
+   <property name="geometry">
+    <rect>
+     <x>301</x>
+     <y>120</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>酒店地址： </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>71</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>张海山锐谐体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>数量</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cityInput">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>120</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入城市名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>240</y>
+     <width>91</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>张海山锐谐体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>折扣</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hotelPhonenum">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>170</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>酒店电话： </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>240</y>
+     <width>71</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>张海山锐谐体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>定价</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>240</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>张海山锐谐体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>房型</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>30</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>更改信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>590</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 12pt &quot;3ds Light&quot;;
+border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="checkButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>590</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);
+font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>确认更改</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="kingSizeLabel">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>427</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>大床间： </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="suiteLabel">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>470</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>套间：  </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tripleLabel">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>383</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>三人间： </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="singleLabel">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>300</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>单人间： </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="doubleLabel">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>340</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;张海山锐谐体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>双人间： </string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="kingSizeSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>422</y>
+     <width>52</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="suiteSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>463</y>
+     <width>52</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="tripleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>381</y>
+     <width>52</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="singleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>299</y>
+     <width>52</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="doubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>340</y>
+     <width>52</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="kingSizeFixedPriceInput">
+   <property name="geometry">
+    <rect>
+     <x>358</x>
+     <y>422</y>
+     <width>108</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="suiteFixedPriceInput">
+   <property name="geometry">
+    <rect>
+     <x>358</x>
+     <y>463</y>
+     <width>108</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="tripleFixedPriceInput">
+   <property name="geometry">
+    <rect>
+     <x>358</x>
+     <y>381</y>
+     <width>108</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="singleFixedPriceInput">
+   <property name="geometry">
+    <rect>
+     <x>358</x>
+     <y>299</y>
+     <width>108</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleFixedPriceInput">
+   <property name="geometry">
+    <rect>
+     <x>358</x>
+     <y>340</y>
+     <width>108</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="kingSizeDiscountInput">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>423</y>
+     <width>68</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="suiteDiscountInput">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>464</y>
+     <width>68</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleDiscountInput">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>341</y>
+     <width>68</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="tripleDiscountInput">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>382</y>
+     <width>68</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="singleDiscountInput">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>300</y>
+     <width>68</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tripleDescribeInput">
+   <property name="geometry">
+    <rect>
+     <x>646</x>
+     <y>382</y>
+     <width>142</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入三人间描述</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kingSizeDescribeInput">
+   <property name="geometry">
+    <rect>
+     <x>646</x>
+     <y>423</y>
+     <width>142</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入大床间描述</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="suiteDescribeInput">
+   <property name="geometry">
+    <rect>
+     <x>646</x>
+     <y>464</y>
+     <width>142</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入套间描述</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="doubleDescribeInput">
+   <property name="geometry">
+    <rect>
+     <x>646</x>
+     <y>341</y>
+     <width>142</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入双人间描述</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="singleDescribeInput">
+   <property name="geometry">
+    <rect>
+     <x>646</x>
+     <y>300</y>
+     <width>142</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 3px;
+border: 1px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入单人间描述</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>cityInput</tabstop>
+  <tabstop>districtInput</tabstop>
+  <tabstop>hotelPhonenumInput</tabstop>
+  <tabstop>singleSpinBox</tabstop>
+  <tabstop>singleFixedPriceInput</tabstop>
+  <tabstop>singleDiscountInput</tabstop>
+  <tabstop>singleDescribeInput</tabstop>
+  <tabstop>doubleSpinBox</tabstop>
+  <tabstop>doubleFixedPriceInput</tabstop>
+  <tabstop>doubleDiscountInput</tabstop>
+  <tabstop>doubleDescribeInput</tabstop>
+  <tabstop>tripleSpinBox</tabstop>
+  <tabstop>tripleFixedPriceInput</tabstop>
+  <tabstop>tripleDiscountInput</tabstop>
+  <tabstop>tripleDescribeInput</tabstop>
+  <tabstop>kingSizeSpinBox</tabstop>
+  <tabstop>kingSizeFixedPriceInput</tabstop>
+  <tabstop>kingSizeDiscountInput</tabstop>
+  <tabstop>kingSizeDescribeInput</tabstop>
+  <tabstop>suiteSpinBox</tabstop>
+  <tabstop>suiteFixedPriceInput</tabstop>
+  <tabstop>suiteDiscountInput</tabstop>
+  <tabstop>suiteDescribeInput</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>HotelInfoChange</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>589</x>
+     <y>581</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>468</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
